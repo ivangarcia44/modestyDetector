@@ -6,7 +6,7 @@ This code detects if a person is dressed inmodestly; if they show too much skin.
 
 The tool is used as follows:
 
-% For a single image:
+For a single image:
 
 >> load('maskrcnn_object_person_car.mat', 'net');
 >> posesNet = getPosesNet('human-pose-estimation.onnx');
@@ -32,12 +32,12 @@ ans =
     scoreAvg2: 59.1407
      scoreMax: 83.5622
      
-% Results above is in percentage, where 10%% is all skin and 0% is no skin. 
-% * scoreAvg1 => Average skin in all parts
-% * scoreAvg2 => Average skin thighs
-% * scoreMax  => Part with maximum skin shown. This mean that a par is showing 83% skin. In this case is the left arm.
+Results above is in percentage, where 10%% is all skin and 0% is no skin. 
+* scoreAvg1 => Average skin in all parts
+* scoreAvg2 => Average skin thighs
+* scoreMax  => Part with maximum skin shown. This mean that a par is showing 83% skin. In this case is the left arm.
 
-% To do this on a whole folder:
+To do this on a whole folder:
 
 >> modestyResults = getModestyForFolder('C:\yourFolderPath')
 
