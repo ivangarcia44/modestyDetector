@@ -32,7 +32,7 @@ ans =
 Results above is in percentage, where 10%% is all skin and 0% is no skin. 
 * scoreAvg1 (AllAvg in image) => Average skin percentage in all parts. 
 * scoreAvg2 (TorsoAvg in image) => Average skin percentage in torso and 4 limbs adjacent to the torso. 
-* scoreMax (TorsoMax in image)  => Maximum skin percentage in torso and 4 limbs adjacent to the torso. T
+* scoreMax (TorsoMax in image)  => Maximum skin percentage in torso and 4 limbs adjacent to the torso.
 
 To do this on a whole folder:
 
