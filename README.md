@@ -34,6 +34,10 @@ Results above is in percentage, where 10%% is all skin and 0% is no skin.
 * scoreAvg2 (TorsoAvg in image) => Average skin percentage in torso and 4 limbs adjacent to the torso. 
 * scoreMax (TorsoMax in image)  => Maximum skin percentage in torso and 4 limbs adjacent to the torso.
 
+This also displays the results in the image:
+
+![alt text](http://url/to/modestyResults.png)
+
 To do this on a whole folder:
 
 >> modestyResults = getModestyForFolder('C:\yourFolderPath')
