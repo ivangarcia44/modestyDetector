@@ -36,7 +36,7 @@ Results above is in percentage, where 10%% is all skin and 0% is no skin.
 
 This also displays the results in the image:
 
-![alt text](http://url/to/modestyResults.png)
+![alt text](https://github.com/ivangarcia44/modestyDetector/blob/main/modestyResults.png)
 
 To do this on a whole folder:
 
