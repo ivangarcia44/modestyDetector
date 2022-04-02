@@ -8,7 +8,7 @@ The tool is used as follows:
 
 For a single image:
 
->> modestyResults = getModestyScore('TestImage1.jpg')
+>> downloadNets(); % This only needs to be done once.
 
 >> modestyResults = getModestyScore('TestImage1.jpg')
 
