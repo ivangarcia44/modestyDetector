@@ -6,7 +6,7 @@ function modestyResults = getModestyScore(aFilePath)
     persistent semSegNet;
     if isempty(semSegNet)
         temp = load('maskrcnn_object_person_car.mat', 'semSegNet');
-        semSegNet = temp.net;
+        semSegNet = temp.semSegNet;
     end
 
     img = imread(aFilePath);
