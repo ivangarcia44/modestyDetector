@@ -3,10 +3,9 @@ function modestyResults = getModestyScore(aFilePath)
     if isempty(posesNet)
         posesNet = coder.loadDeepLearningNetwork(coder.const('posesNet.mat'));
     end
-    semSegFileName = 'maskrcnn_object_person_car.mat';
     persistent semSegNet;
     if isempty(semSegNet)
-        temp = load(semSegFileName, 'net');
+        temp = load('maskrcnn_object_person_car.mat', 'semSegNet');
         semSegNet = temp.net;
     end
 

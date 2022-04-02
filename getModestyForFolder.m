@@ -3,14 +3,7 @@ function modestyResults = getModestyForFolder(aFolderPath)
     jpegFiles = dir([aFolderPath, '/*.jpeg']);
     allFiles = {jpgFiles.name, jpegFiles.name};
 
-    semSegFileName = 'maskrcnn_object_person_car.mat';
-    poseNetFileName = 'posesNet.mat';
-    if ~isfile(poseNetFileName)
-        posesNet = getPosesNet('human-pose-estimation.onnx');
-        save(poseNetFileName, 'posesNet');
-    end
-    assert(isfile(semSegFileName), [semSegFileName, ' file was not found']);
-    assert(isfile(poseNetFileName), [poseNetFileName, ' file not found']);
+    downloadNets();
 
     numFiles = numel(allFiles);
     tempResults = cell(1, numFiles);
